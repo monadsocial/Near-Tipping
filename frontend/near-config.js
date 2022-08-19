@@ -1,4 +1,4 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || 'near-blank-project.monad-wei.testnet' ;
+const CONTRACT_NAME = process.env.CONTRACT_NAME || 'monad-tipping.monad.testnet'
 
 function getConfig(env) {
   switch (env) {
