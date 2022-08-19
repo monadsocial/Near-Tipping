@@ -9,7 +9,7 @@ class MyContract extends NearContract {
   beneficiary: string;
   donations: UnorderedMap;
 
-  constructor({message="JOIN YOUR FAVORITE CIRCLES"}:{message: string}) {
+  constructor({message="Welcome to Monad.Social"}:{message: string}) {
     //execute the NEAR Contract's constructor
     super();
     this.greeting = message;
@@ -17,7 +17,7 @@ class MyContract extends NearContract {
     this.donations = new UnorderedMap('map-uid-1');
   }
 
-  default(){ return new MyContract({message: "JOIN YOUR FAVORITE CIRCLES"}) }
+  default(){ return new MyContract({message: "Welcome to Monad.Social"}) }
 
   // @call indicates that this is a 'change method' or a function
   // that changes state on the blockchain. Change methods cost gas.

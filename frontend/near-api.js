@@ -40,7 +40,7 @@ export function signInWithNearWallet() {
 
 export async function setGreetingOnContract(message){
   let response = await window.contract.set_greeting({
-    args:{message: message}
+    args:{message: message},amount: "100000000000000000000000"
   });
   return response;
 }
